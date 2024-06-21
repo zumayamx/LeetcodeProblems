@@ -41,6 +41,7 @@ public:
             if (getNumOfBouquets(bloomDay, mid, k) >= m) {
                 minDays = mid;
                 end = mid - 1;
+                cout << "END: " << end << endl;
             } else {
                 start = mid + 1;
             }
@@ -51,9 +52,9 @@ public:
 };
 
 int main() {
-    vector<int> bloomDay = {7,7,7,7,12,7,7};
-    int m = 2;
-    int k = 3;
+    vector<int> bloomDay = {1,10,3,10,2};
+    int m = 3;
+    int k = 1;
 
     Solution n;
     cout << n.minDays(bloomDay, m, k) << endl;
